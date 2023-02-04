@@ -51,14 +51,14 @@ local function ToggleBoobytrap(data)
 end
 
 local function drawTxt(text,font,x,y,scale,r,g,b,a)
-	SetTextFont(font)
-	SetTextScale(scale,scale)
-	SetTextColour(r,g,b,a)
-	SetTextOutline()
-	SetTextCentre(1)
-	SetTextEntry("STRING")
-	AddTextComponentString(text)
-	DrawText(x,y)
+    SetTextFont(font)
+    SetTextScale(scale,scale)
+    SetTextColour(r,g,b,a)
+    SetTextOutline()
+    SetTextCentre(1)
+    SetTextEntry("STRING")
+    AddTextComponentString(text)
+    DrawText(x,y)
 end
 
 local function DisplayHelpText(text)
@@ -112,15 +112,15 @@ RegisterNetEvent('mh-boobytrap:server:addBoobytrap', function()
 end)
 
 CreateThread(function()
-	while true do
+    while true do
         IsAtBoobytrapPosition()
-		Wait(1000)
-	end
+	Wait(1000)
+    end
 end)
 
 CreateThread(function()
-	while true do
-		Wait(0)
+    while true do
+	Wait(0)
         local coords = GetEntityCoords(PlayerPedId())
         if boobytraps ~= nil then
             for _, data in pairs(boobytraps) do
