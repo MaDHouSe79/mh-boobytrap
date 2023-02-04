@@ -29,6 +29,10 @@
 # MH Boobytrap
 - To protect your properties :)
 
+# Install
+- 1. Create a folder `[mh] `in the folder `resources` and place the folder `mh-boobytrap` inside the `[mh]` folder
+- 2. Add in the server.cfg, `ensure [mh]` (make sure you ensure it after the `ensure [qb]`)
+
 # QB Shared Items
 ```lua
 ['boobytrap'] 		 			 = {['name'] = 'boobytrap', 					['label'] = 'Boobytrap', 				['weight'] = 3000, 		['type'] = 'item', 		['image'] = 'boobytrap.png', 			['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'A boobytrap landmine'},
