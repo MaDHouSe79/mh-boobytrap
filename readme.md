@@ -26,8 +26,8 @@
   <img alig src="https://github-profile-trophy.vercel.app/?username=MaDHouSe79&margin-w=15&column=6" />
 </p>
 
-# MH Throw Props
-- just throw with props :)
+# MH Boobytrap
+- To protect your properties :)
 
 # QB Shared Items
 ```lua
