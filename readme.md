@@ -1,0 +1,1 @@
+['boobytrap'] 		 			 = {['name'] = 'boobytrap', 					['label'] = 'Boobytrap', 				['weight'] = 3000, 		['type'] = 'item', 		['image'] = 'boobytrap.png', 			['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'A boobytrap landmine'},
