@@ -8,7 +8,7 @@ local Translations = {
         ['walk_in_to_trap'] = "%{username} just stepped into a bobby trap of yours!!",
         ['cant_place_trap'] = "you cannot place this booby trap here, make sure there is enough space",
         ['disable_trap'] = "This boobytrap is now disable",
-        ['enable_trap'] = "This booby trap is now activated",
+        ['enable_trap'] = "This boobytrap is now activated",
     },
     progressbar = {
         ['place_trap'] = "Place Boobytrap...",
