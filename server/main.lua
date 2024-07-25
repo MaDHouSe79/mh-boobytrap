@@ -134,7 +134,7 @@ RegisterServerEvent('mh-boobytrap:server:addBoobytrap', function(coords)
             Player.PlayerData.citizenid, 3, json.encode(coords), 1,
         })
         Player.Functions.RemoveItem('boobytrap', 1, nil)
-	TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['boobytrap'], 'remove', 1)
+	TriggerClientEvent('qb-inventory:client:ItemBox', src, QBCore.Shared.Items['boobytrap'], 'remove', 1)
         TriggerClientEvent('QBCore:Notify', src, Lang:t('notify.place_a_trap'), "success", 5000)
         FindAllBoobytraps(src)
     else
@@ -147,7 +147,7 @@ RegisterServerEvent('mh-boobytrap:server:pickup', function(data)
     local Player = QBCore.Functions.GetPlayer(src)
     DeleteTrap(data)
     Player.Functions.AddItem('boobytrap', 1, nil)
-    TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['boobytrap'], 'add', 1)
+    TriggerClientEvent('qb-inventory:client:ItemBox', src, QBCore.Shared.Items['boobytrap'], 'add', 1)
     FindAllBoobytraps(src)
 end)
 
